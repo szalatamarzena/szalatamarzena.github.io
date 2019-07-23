@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+    
+    <div class="hero-inside">
+        <h1>Hi, I am Marzena!</h1>
+        <p class="about">I'm Front-end and Web Develper living in Poznan, Poland. 
+                I am a graduate of Wyższa Szkoła Bankowa a computer science faculty.</p>
+    </div>
+    </div>
+    <section class="first-section">
+            <div class="animation">
+        <h2>SKILLS</h2>
+    <div class="container">
+        <img src="img/js.png" alt="Java Script" class="item-skill">
+        <img src="img/html5.png" alt="HTML5" class="item-skill">
+        <img src="img/css3.png" alt="CSS3" class="item-skill">
+        <img src="img/bootstrap.png" alt="bootstrap" class="item-skill">
+        <img src="img/ps.png" alt="Photoshop" class="item-skill">
+        <img src="img/ai.png" alt="Illustrator" class="item-skill">
+        <img src="img/Xd.png" alt="Xd" class="item-skill">
+    </section>
+    <section class="second-section">
+        <div class="animation">
+            <h2>HOBBY</h2>
+        <div class="container">
+            <div class="col">
+                <img src="img/books.png" alt="BOOKS" class="hobby-img">
+                <p class="hobby-text">BOOKS</p>
+            </div>
+            
+            <div class="col">
+                <img src="img/ART.png" alt="ART" class="hobby-img">
+                <p class="hobby-text">ART</p>
+            </div>
+            <div class="col">
+                <img src="img/it.png" alt="IT" class="hobby-img">
+                <p class="hobby-text">IT NEWS</p>
+            </div>
+            <div class="col">
+                <img src="img/games.png" alt="GAMES" class="hobby-img">
+                <p class="hobby-text">GAMES</p>
+            </div>
+            <div class="col">
+                <img src="img/music.png" alt="MUSIC" class="hobby-img">
+                <p class="hobby-text">MUSIC</p>
+            </div>
+            <div class="col">
+                <img src="img/tv.png" alt="TV" class="hobby-img">
+                <p class="hobby-text">MOVIE & SERIES</p>
+            </div>
+        
+            </div>
+        </section>
+
+    <section class="last-section">
+        <div class="animation">
+        <h2>CONTACT</h2>
+        <p class="contact-info">e-mail: szalatamarzena@gmail.com</P>
+        <p class="contact-info">Phone: +48 886 791 182</p>
+    </section>
+    <script>
+        let elements = document.querySelectorAll('.animation');
+        window.addEventListener('scroll', onscroll);
+
+        function onscroll() {
+            let windowHeight = window.innerHeight;
+            for (let element of elements) {
+                var positionFromTop = element.getBoundingClientRect().top;
+                if (positionFromTop - windowHeight <= 0) {
+                    element.classList.add('animation-right');
+                }
+            }
+        }
+    </script>
+</body>
+</html>    
