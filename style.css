@@ -4,6 +4,7 @@
 body {
     margin: 0;
     overflow-x: hidden;
+    border: 1px solid transparent;
 }
 
 h1 {
@@ -111,31 +112,26 @@ p {
     background-color: #BDF2ED;
 }
 
+.animation {
+    transition: transform 1.5s ease-in-out;
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    
+}
+
 .animation-right {
-    animation-duration: 1.5s;
-    animation-name: slidefromright;
-
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
 
-@keyframes slidefromright {
-    from {
-        opacity: 0;
-        transform: translate3d(2000px, 0, 0);
-    }
 
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@media (min-width: 801px) {
+@media (min-width: 851px) {
     .hero::before {
         background-image: url("img/bgimg.jpg");
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .hero::before {
         background-image: url("img/bgimgmobile2.jpg");
     }
@@ -151,5 +147,24 @@ p {
 
     .contact-info {
         padding: 1em 1em 0 1em;
+    }
+    .animation {
+        -o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
     }
 }

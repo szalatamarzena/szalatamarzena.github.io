@@ -2,8 +2,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -63,23 +66,9 @@
     <section class="last-section">
         <div class="animation">
             <h2>CONTACT</h2>
-            <p class="contact-info">e-mail: szalatamarzena@gmail.com</P>
+            <p class="contact-info">e-mail: szalatamarzena@gmail.com</p>
             <p class="contact-info">Phone: +48 886 791 182</p>
     </section>
-    <script>
-        let elements = document.querySelectorAll('.animation');
-        window.addEventListener('scroll', onscroll);
-
-        function onscroll() {
-            let windowHeight = window.innerHeight;
-            for (let element of elements) {
-                var positionFromTop = element.getBoundingClientRect().top;
-                if (positionFromTop - windowHeight <= 0) {
-                    element.classList.add('animation-right');
-                }
-            }
-        }
-    </script>
 </body>
 
 </html>
