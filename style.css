@@ -25,16 +25,19 @@ h2 {
     font-size: 42px;
     margin: 0;
 }
-
-p {
+h3, p, div{
     font-family: 'Muli', sans-serif;
-    text-align: center;
+  
+}
+h3, p{
+    margin: 2px 2px;
 }
 
 .about {
     color: #ffffff;
     font-size: 18px;
     padding: 2em 5em 0 5em;
+    text-align: center;
 }
 
 .hero {
@@ -95,21 +98,36 @@ p {
     text-align: center;
     padding: 1em 5em 0 5em;
 }
-
-.first-section {
-    background-color: #BDF2ED;
-    padding-bottom: 5em;
-}
-
-.second-section {
-    background-color: #FFD0C7;
-    padding-bottom: 5em;
-
-}
-
-.last-section {
+.project-section{
     padding: 0 0 5em 0;
-    background-color: #BDF2ED;
+    background-color: #D9CCC5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.project-item{
+    background-color: #D9BFA9;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+
+.skill-section {
+    background-color:#F2E4D8;
+    padding-bottom: 5em;
+}
+
+.hobby-section {
+    background-color: #D9CCC5;
+    padding-bottom: 5em;
+
+}
+
+.contact-section {
+    padding: 0 0 5em 0;
+    background-color:#F2E4D8;
 }
 
 .animation {
@@ -123,7 +141,55 @@ p {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
 }
+.btn a{
+    background-color: #A69586;
+    width: 200px;
+    padding: 14px;
+    color: #FFEFD6;
+}
+.project-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px 0;
+}
+.img-item{
+    position: relative;
+  /*margin-top: 50px;*/
+  width: auto;
+  height: auto;
+    
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  
+}
+.img-item:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .6);
+  }
 
+.btn-website{
+    position: absolute;
+    width: 800px;
+    left:0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.img-item:hover .btn-website {
+    opacity: 1;
+  }
 
 @media (min-width: 851px) {
     .hero::before {
@@ -166,5 +232,11 @@ p {
 		-o-animation: none !important;
 		-ms-animation: none !important;
 		animation: none !important;
+    }
+    .project-item{
+        padding: 10px;
+    }
+    .btn{
+        margin:20px 0;
     }
 }
