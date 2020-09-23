@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    color: #000000;
+    color: #ffffff;
     padding: 3em 0 1em 0;
     text-align: center;
     font-family: 'Muli', sans-serif;
@@ -85,7 +85,7 @@ h3, p{
 }
 
 .hobby-text {
-    color: #000000;
+    color: #ffffff;
 }
 
 .hobby-img {
@@ -94,13 +94,13 @@ h3, p{
 }
 
 .contact-info {
-    color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 1em 5em 0 5em;
 }
 .project-section{
     padding: 0 0 5em 0;
-    background-color: #D9CCC5;
+    background-color: #175073;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -108,26 +108,27 @@ h3, p{
     
 }
 .project-item{
-    background-color: #D9BFA9;
+    background-color:#012840 ;
     padding: 20px;
     margin: 5px 0;
+    color: #ffffff
 }
 
 
 .skill-section {
-    background-color:#F2E4D8;
+    background-color: #2A678C;
     padding-bottom: 5em;
 }
 
 .hobby-section {
-    background-color: #D9CCC5;
+    background-color:  #175073;
     padding-bottom: 5em;
 
 }
 
 .contact-section {
     padding: 0 0 5em 0;
-    background-color:#F2E4D8;
+    background-color: #2A678C;
 }
 
 .animation {
@@ -142,10 +143,10 @@ h3, p{
     -webkit-transform: translateX(0%);
 }
 .btn a{
-    background-color: #A69586;
+    background-color:#175073;
     width: 200px;
     padding: 14px;
-    color: #FFEFD6;
+    color: #ffffff;
 }
 .project-details{
     display: flex;
@@ -157,7 +158,6 @@ h3, p{
 }
 .img-item{
     position: relative;
-  /*margin-top: 50px;*/
   width: auto;
   height: auto;
     
@@ -168,13 +168,13 @@ h3, p{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(1, 28, 64, 0);
     transition: background 0.5s ease;
   
 }
 .img-item:hover .overlay {
     display: block;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(1, 28, 64, .9);
   }
 
 .btn-website{
@@ -238,5 +238,11 @@ h3, p{
     }
     .btn{
         margin:20px 0;
+    }
+    .btn-website{
+    
+    width: 375px;
+    
+
     }
 }
