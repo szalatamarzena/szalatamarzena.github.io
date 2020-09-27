@@ -147,6 +147,7 @@ h3, p{
     width: 200px;
     padding: 14px;
     color: #ffffff;
+    text-decoration: none;
 }
 .project-details{
     display: flex;
@@ -189,6 +190,12 @@ h3, p{
 
 .img-item:hover .btn-website {
     opacity: 1;
+  }
+.contact-icon{
+      color: #ffffff;
+      font-size: 2em;
+      padding: 10px;
+      
   }
 
 @media (min-width: 851px) {
