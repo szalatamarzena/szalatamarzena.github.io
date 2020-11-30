@@ -191,9 +191,9 @@ h3, p{
 .img-item:hover .btn-website {
     opacity: 1;
   }
-.contact-icon, a{
+.contact-icon{
       color: #ffffff;
-      font-size: 2em;
+      font-size: 2rem;
       padding: 10px;
       
   }
