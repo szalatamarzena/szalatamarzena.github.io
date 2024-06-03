@@ -5,133 +5,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="./fontawesome/css/all.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/3dd06f847b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="hero">
-
         <div class="hero-inside">
             <h1>Hi, I am Marzena!</h1>
-            <p class="about">I'm Front-end and Web Develper living in Poznan, Poland.
-                I am a graduate of Wyższa Szkoła Bankowa a computer science faculty.</p>
+            <p class="desc">Front-end developer with skills in Magento, React.js, WordPress, and WooCommerce. Creates
+                user-friendly and visually appealing websites.
+            </p>
+            <div class="btns-wrapper">
+                <div class="btn"><a href="files/Marzena_Szalata.pdf" target="_blank"><i
+                            class="icon fa-solid fa-download"></i>
+                        resume</a></div>
+                <div class="btn"><a href="files/Marzena_Szalata_ENG.pdf.pdf" target="_blank"><i
+                            class="icon fa-solid fa-download"></i>
+                        resume eng</a></div>
+            </div>
         </div>
+        <picture>
+            <source media="(min-width:960px)" srcset="./img/bgimg.jpg">
+            <img src="./img/bgimgmobile.jpg" alt="banner">
+        </picture>
     </div>
-
+    <section class="about-section">
+        <div class="img-container">
+            <img src="./img/aboutme.jpg" />
+        </div>
+        <div class="text-container">
+            <div class="content-wrapper">
+                <h2>About me</h2>
+                <p class="about">Experienced Frontend Developer with 3 years of experience crafting intuitive UIs using
+                    various technologies. Specialize in Magento 2, WordPress, and WooCommerce, with proficiency in React
+                    and
+                    other JavaScript libraries. Boasting extensive experience designing and implementing
+                    high-performance
+                    web interfaces. Motivated by new challenges and continuous skill development. Beyond my coding
+                    skills, I
+                    have many interests outside of work. I enjoy reading books and playing games (both on the computer
+                    and
+                    board games). I'm also interested in art - it allows me to express myself and escape from everyday
+                    life.
+                    Crocheting is my way to relax and create something beautiful. Thanks to these hobbies, I have more
+                    interesting ideas at work and I understand people better.
+                </p>
+            </div>
+        </div>
+    </section>
     <section class="project-section">
-        <h2>PROJECTS</h2>
-        <article class="project-item">
-            <div class="img-item">
-                <picture>
-                    <source srcset="img/recipe-app.png" media="(min-width: 800px)">
-                    <img src="img/recipe-app-mobile.png" alt="" />
-                </picture>
-                <div class="overlay"></div>
-                <div class="btn btn-website"><a href="https://szalatamarzena.github.io/recipe-app/#/" target="_blank">Visit Website</a></div>
-            </div>
-            <h3>Recipe app</h3>
-            <div class="project-details">
-                <p>I created this site using Vue and Vuetify. </p>
-                <div class="btn"><a href="https://github.com/szalatamarzena/recipe-app" target="_blank">SOURCE</a>
+        <h2>Projects</h2>
+        <div class="project-items container">
+            <article class="project-item">
+                <h3 class="project-title">FrunkiBunki </h3>
+                <div class="img-item">
+                    <picture>
+                        <source srcset="./img/frunkibunki.jpg" media="(min-width: 960px)">
+                        <img src="img/frunkibunkimobile.jpg" alt="" />
+                    </picture>
+                </div>
+                <div class="project-details">
+                    <p>Frunkibunki is a rabbit and rodent hotel website built on WordPress. My main focus was on the
+                        booking
+                        system and sending notifications about visits. The site is built on the latest WordPress using
+                        blocks. The site will be further developed into an online store. </p>
+                    <div class="btn btn-website"><a href="https://frunkibunki.pl/" target="_blank"><i
+                                class="icon fa-solid fa-globe"></i>Visit Website</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-item">
+                <h3 class="project-title">AdoptMe </h3>
+                <div class="img-item">
+                    <picture>
+                        <source srcset="./img/AdoptMe.jpg" media="(min-width: 960px)">
+                        <img src="img/AdoptMemobile.jpg" alt="" />
+                    </picture>
+                </div>
+                <div class="project-details">
+                    <p>AdoptMeApp is a React application designed for pet adoption. Building this app was part of a
+                        Frontend
+                        Masters course led by Brian Holt. It utilizes the latest React features, including hooks,
+                        effects,
+                        context, and portals. Throughout the course, you'll gain hands-on experience with various tools
+                        from
+                        the entire React ecosystem (like Vite, ESLint, TailwindCSS, React Router, and React Query) to
+                        construct a comprehensive application for browsing adoptable pets! </p>
+                    <div class="btn"><a href="https://github.com/szalatamarzena/AdoptMeApp" target="_blank"><i
+                                class="icon fa-solid fa-code"></i>SOURCE</a>
+                    </div>
+                    <div class="btn btn-website"><a href="https://szalatamarzena.github.io/AdoptMeApp/"
+                            target="_blank"><i class="icon fa-solid fa-globe"></i>Visit Website</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-item">
+                <h3 class="project-title">Recipe app</h3>
+                <div class="img-item">
+                    <picture>
+                        <source srcset="img/recipe-app.png" media="(min-width: 960px)">
+                        <img src="img/recipe-app-mobile.png" alt="" />
+                    </picture>
+                    <div class="overlay"></div>
+
+                </div>
+                <div class="project-details">
+                    <p>The recipe app I created using Vue and Vuetify is a modern take on the traditional cookbook. It
+                        can
+                        also serve as a convenient shopping list. Users can easily use it as a shopping list to ensure
+                        they
+                        never forget an ingredient for a cake or a special dinner </p>
+                    <div class="btn"><a href="https://github.com/szalatamarzena/AdoptMeApp" target="_blank"><i
+                                class="icon fa-solid fa-code"></i>SOURCE</a>
+                    </div>
+                    <div class="btn btn-website"><a href="https://szalatamarzena.github.io/AdoptMeApp/#/"
+                            target="_blank"><i class="icon fa-solid fa-globe"></i>Visit Website</a></div>
+                </div>
+            </article>
+            <article class="project-item">
+                <h3 class="project-title">Feed mole game</h3>
+                <div class="img-item">
+                    <picture>
+                        <source srcset="img/mole.png" media="(min-width: 960px)">
+                        <img src="img/mole-mobile.png" alt="" />
+                    </picture>
+                    <div class="overlay"></div>
+                </div>
+                <div class="project-details">
+                    <p>I've created a fun and interactive game called "Feed the Mole" using JavaScript, HTML, and CSS.
+                        This
+                        desktop-only game challenges your reflexes and quick thinking. Help the hungry mole by feeding
+                        it
+                        worms before they disappear! Watch out for empty holes – feeding the wrong one might cost you
+                        precious points. </p>
+                    <div class="btn"><a href="https://github.com/szalatamarzena/mole-game" target="_blank"><i
+                                class="icon fa-solid fa-code"></i>SOURCE</a>
+                    </div>
+                    <div class="btn btn-website"><a href="https://szalatamarzena.github.io/mole-game/"
+                            target="_blank"><i class="icon fa-solid fa-globe"></i>Visit
+                            Website</a></div>
                 </div>
 
-            </div>
-
-        </article>
-        <article class="project-item">
-            <div class="img-item">
-                <picture>
-                    <source srcset="img/mole.png" media="(min-width: 800px)">
-                    <img src="img/mole-mobile.png" alt="" />
-                </picture>
-                <div class="overlay"></div>
-                <div class="btn btn-website"><a href="https://szalatamarzena.github.io/mole-game/" target="_blank">Visit Website</a></div>
-            </div>
-
-            <h3>Feed mole game</h3>
-            <div class="project-details">
-                <p>I created this game using JS, HTML and CSS. This game works just on desktop. </p>
-                <div class="btn"><a href="https://github.com/szalatamarzena/mole-game" target="_blank">SOURCE</a>
+            </article>
+            <article class="project-item">
+                <h3 class="project-title">One page website</h3>
+                <div class="img-item">
+                    <picture>
+                        <source srcset="img/cahee.png" media="(min-width: 960px)">
+                        <img src="img/cahee-mobile.png" alt="" />
+                    </picture>
+                    <div class="overlay"></div>
                 </div>
-            </div>
-
-        </article>
-        <article class="project-item">
-            <div class="img-item">
-                <picture>
-                    <source srcset="img/cahee.png" media="(min-width: 800px)">
-                    <img src="img/cahee-mobile.png" alt="" />
-                </picture>
-                <div class="overlay"></div>
-                <div class="btn btn-website"><a href="https://szalatamarzena.github.io/cahee/" target="_blank">Visit Website</a></div>
-            </div>
-            <h3>One page website</h3>
-            <div class="project-details">
-                <p>I created this site using HTML 5, JS and Sass. </p>
-                <div class="btn"><a href="https://github.com/szalatamarzena/cahee" target="_blank">SOURCE</a>
+                <div class="project-details">
+                    <p>This website is designed for a seamless and focused experience, utilizing the power of HTML5,
+                        JavaScript, and Sass.</p>
+                    <div class="btn"><a href="https://github.com/szalatamarzena/cahee" target="_blank"><i
+                                class="icon fa-solid fa-code"></i>SOURCE</a>
+                    </div>
+                    <div class="btn btn-website"><a href="https://szalatamarzena.github.io/cahee/" target="_blank"><i
+                                class="icon fa-solid fa-globe"></i>Visit
+                            Website</a></div>
                 </div>
-
-            </div>
-
-        </article>
-        
+            </article>
+        </div>
 
     </section>
     <section class="skill-section">
-        <div class="animation">
-            <h2>SKILLS</h2>
-            <div class="container">
+        <h2>Skills</h2>
+        <div class="container">
+            <div class="skill-box">
                 <img src="img/js.png" alt="Java Script" class="item-skill">
-                <img src="img/html5.png" alt="HTML5" class="item-skill">
-                <img src="img/css3.png" alt="CSS3" class="item-skill">
-                <img src="img/Sass.png" alt="Sass" class="item-skill">
-                <img src="img/ps.png" alt="Photoshop" class="item-skill">
-                <img src="img/ai.png" alt="Illustrator" class="item-skill">
-                <img src="img/Xd.png" alt="Xd" class="item-skill">
-    </section>
-
-    <section class="hobby-section">
-        <div class="animation">
-            <h2>HOBBY</h2>
-            <div class="container">
-                <div class="col">
-                    <img src="img/books.png" alt="BOOKS" class="hobby-img">
-                    <p class="hobby-text">BOOKS</p>
-                </div>
-
-                <div class="col">
-                    <img src="img/ART.png" alt="ART" class="hobby-img">
-                    <p class="hobby-text">ART</p>
-                </div>
-                <div class="col">
-                    <img src="img/it.png" alt="IT" class="hobby-img">
-                    <p class="hobby-text">IT NEWS</p>
-                </div>
-                <div class="col">
-                    <img src="img/games.png" alt="GAMES" class="hobby-img">
-                    <p class="hobby-text">GAMES</p>
-                </div>
-                <div class="col">
-                    <img src="img/music.png" alt="MUSIC" class="hobby-img">
-                    <p class="hobby-text">MUSIC</p>
-                </div>
-                <div class="col">
-                    <img src="img/tv.png" alt="TV" class="hobby-img">
-                    <p class="hobby-text">MOVIE & SERIES</p>
-                </div>
-
+                <p>Adds interactivity to websites.</p>
             </div>
+            <div class="skill-box">
+                <img src="img/html5.png" alt="HTML5" class="item-skill">
+                <p>The foundation of web pages.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/css3.png" alt="CSS3" class="item-skill">
+                <p>Styles the look of web pages.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/react.png" alt="React" class="item-skill">
+                <p>Builds user interfaces quickly and easily.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/Sass.png" alt="Sass" class="item-skill">
+                <p>Simplifies CSS code.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/git.png" alt="Git" class="item-skill">
+                <p>Tracks changes to web pages.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/figma.png" alt="Figma" class="item-skill">
+                <p>Designs user interfaces visually.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/Xd.png" alt="Xd" class="item-skill">
+                <p>Creates user interfaces and prototypes.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/magento.png" alt="magento" class="item-skill">
+                <p>Builds online stores.</p>
+            </div>
+            <div class="skill-box">
+                <img src="img/wordpress.png" alt="WordPress" class="item-skill">
+                <p>Creates websites and blogs.</p>
+            </div>
+        </div>
     </section>
-
     <section class="contact-section">
-        <div class="animation">
-            <h2>CONTACT</h2>
-            <p class="contact-info">e-mail: szalatamarzena@gmail.com</p>
-            <p class="contact-info">Phone: +48 886 791 182</p>
-            <p class="contact-info"><a href="https://github.com/szalatamarzena/" target="_blank"><i class="contact-icon fab fa-github"></i></a><a href="https://www.linkedin.com/in/marzena-szałata-611020149" target="_blank"><i class="contact-icon fab fa-linkedin-in"></i></a></p>            
-        </div>    
-   </section>
+        <div class="text-container">
+            <div class="content-wrapper">
+                <h2>Contact</h2>
+                <p class="short-desc"> Feel free to get in touch with me for any exciting project collaborations or
+                    inquiries! </p>
+                <div class="btns-wrapper">
+                    <p class="btn"><a href="mailto:szalatamarzena@gmail.com" target="_blank"><i
+                                class="icon fa-regular fa-envelope"></i>mail me</a></p>
+                    <p class="btn"><a href="tel:+48886791182" target="_blank"><i class="icon fa-solid fa-phone"></i>call
+                            me</a></p>
+                    <p class="btn"><a href="https://github.com/szalatamarzena/" target="_blank"><i
+                                class="icon fab fa-github"></i>github</a></p>
+                    <p class="btn"><a href="https://www.linkedin.com/in/marzena-szałata-611020149" target="_blank"><i
+                                class="icon fab fa-linkedin-in"></i>linkedin</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="./img/Contactme.jpg" />
+        </div>
+    </section>
 </body>
 
 </html>
